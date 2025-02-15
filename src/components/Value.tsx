@@ -25,7 +25,7 @@ function Value(props: ValueProps) {
     const scale = 1 + Math.min(1, 100 / distance) * 1.4;
 
     setScale(scale);
-  }, [props.x, props.y]);
+  }, [props]);
 
   return (
     <div

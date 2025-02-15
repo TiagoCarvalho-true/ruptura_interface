@@ -9,7 +9,7 @@ export default class Grid {
         return {
           id: index + 1,
           number: Math.floor(Math.random() * 10),
-          moveEffect: Math.floor(Math.random() * 4) as any,
+          moveEffect: Math.floor(Math.random() * 4) as 1 | 2 | 3 | 4,
         };
       })
     );
