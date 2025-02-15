@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #08203a;
+  --foreground: #8ee3f1;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  cursor: url("../../public/cursor.png"), auto;
+}
+
+.floating-xl {
+  animation: float-xl 3s ease-in-out infinite;
+}
+
+.floating-xr {
+  animation: float-xr 3s ease-in-out infinite;
+}
+
+.floating-yb {
+  animation: float-yb 3s ease-in-out infinite;
+}
+
+.floating-yt {
+  animation: float-yt 3s ease-in-out infinite;
+}
+
+@keyframes float-xl {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-xr {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-yb {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-yt {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
