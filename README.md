@@ -9,3 +9,8 @@ Tailwind CSS
 📋 Pré-requisitos
 Node.js 18+
 npm ou yarn
+
+<br>
+Este projeto é inspirado na interface de usuário vista na série Severance da Apple TV+. Todos os direitos da interface original pertencem à Apple Inc.
+
+
