@@ -4,7 +4,7 @@
 
 :root {
   --background: #08203a;
-  --foreground: #8ee3f1;
+  --foreground: #c0c0c0;
 }
 
 body {
@@ -12,6 +12,23 @@ body {
   background: var(--background);
   cursor: url("../../public/cursor.png"), auto;
 }
+@keyframes metallic-shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.1);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.border-[--foreground] {
+  border-color: #c0c0c0;
+  animation: metallic-shine 3s infinite;
+}
+
 
 .floating-xl {
   animation: float-xl 3s ease-in-out infinite;
